@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/photoicon"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            fresco:placeholderImage="@mipmap/ic_launcher"
+            android:layout_marginLeft="8dp"
+            android:layout_alignParentLeft="true"
+
+            android:layout_marginTop="0dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/caption"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:text="@string/label_image_caption"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#00000A"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/photo"
+        android:layout_width="match_parent"
+        android:layout_height="312dp"
+        fresco:actualImageScaleType = "centerCrop"
+        fresco:placeholderImage = "@mipmap/ic_launcher"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/sponsored"
+        android:layout_below="@id/photo"
+        android:layout_marginRight="6dp"
+        android:layout_marginEnd="6dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/default_sponsored_text"
+        android:layout_gravity="end"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/container_view"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="312dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/destextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/container_view"
+        android:layout_centerHorizontal="true"
+        android:text="TextView" />
+
+</RelativeLayout>

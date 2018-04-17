@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">InMobi NativeAd Samples</string>
+    <string name="label_title">Title</string>
+    <string name="default_sponsored_text">Sponsored</string>
+    <string name="title_section1">Headlines</string>
+    <string name="title_section2">Photos</string>
+    <string name="title_section3">News</string>
+    <string name="title_section4">Gallery</string>
+    <string name="label_image_caption">Caption</string>
+
+    <string name="title_activity_splash_fullscreen">NativeVideoDemo</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="title_activity_pre_roll">PreRollActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_section5">RecycleView</string>
+
+    <string name="unlock_instructions">Slide to unlock</string>
+    <string name="unlock_locked">Locked</string>
+    <string name="unlock_unlocked">Unlocked</string>
+    <string name="unlock_thumb">Move this thumb</string>
+    <string name="permission_accessibility_setting_description">"Turn on and it locks all soft key including HOME, RECENTS, BACK, MENU buttons.
+
+You may be warned about potential privacy risk, that's just a regular informative warning for any accessibility service. We promise NEVER EVER collecting your personal information in this accessibility service."</string>
+</resources>

@@ -1,0 +1,578 @@
+[
+    {
+        "merged": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/build/intermediates/res/merged/debug/layout/activity_native_ads.xml",
+        "source": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/src/main/res/layout/activity_native_ads.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/build/intermediates/res/merged/debug/layout/activity_native_ads.xml",
+        "source": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/src/main/res/layout/activity_native_ads.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/build/intermediates/res/merged/debug/layout/place_autocomplete_item_prediction.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/a8e34772272713778cb25af755c027cd9c8fffb4/output/res/layout/place_autocomplete_item_prediction.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/build/intermediates/res/merged/debug/layout/abc_search_view.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/abc_search_view.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/build/intermediates/res/merged/debug/layout/notification_media_cancel_action.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/build/intermediates/res/merged/debug/layout/place_autocomplete_progress.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/a8e34772272713778cb25af755c027cd9c8fffb4/output/res/layout/place_autocomplete_progress.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/build/intermediates/res/merged/debug/layout/place_autocomplete_item_prediction.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/a8e34772272713778cb25af755c027cd9c8fffb4/output/res/layout/place_autocomplete_item_prediction.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/build/intermediates/res/merged/debug/layout/notification_template_part_chronometer.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view_list_item.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/build/intermediates/res/merged/debug/layout/design_navigation_item_separator.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/fa51afe1a612dcb923d0f4ccf75d0b763ff28669/output/res/layout/design_navigation_item_separator.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/build/intermediates/res/merged/debug/layout/place_autocomplete_item_powered_by_google.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/a8e34772272713778cb25af755c027cd9c8fffb4/output/res/layout/place_autocomplete_item_powered_by_google.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view_list_item.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/build/intermediates/res/merged/debug/layout/notification_template_media.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/notification_template_media.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/build/intermediates/res/merged/debug/layout/abc_list_menu_item_radio.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/build/intermediates/res/merged/debug/layout/design_navigation_item_subheader.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/fa51afe1a612dcb923d0f4ccf75d0b763ff28669/output/res/layout/design_navigation_item_subheader.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/build/intermediates/res/merged/debug/layout/news_headline_view.xml",
+        "source": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/src/main/res/layout/news_headline_view.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/build/intermediates/res/merged/debug/layout/abc_search_view.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/abc_search_view.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/build/intermediates/res/merged/debug/layout/select_dialog_singlechoice_material.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/build/intermediates/res/merged/debug/layout/abc_expanded_menu_layout.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/build/intermediates/res/merged/debug/layout/abc_alert_dialog_button_bar_material.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/build/intermediates/res/merged/debug/layout/abc_alert_dialog_material.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/abc_alert_dialog_material.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/build/intermediates/res/merged/debug/layout/abc_list_menu_item_checkbox.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/build/intermediates/res/merged/debug/layout/place_autocomplete_fragment.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/a8e34772272713778cb25af755c027cd9c8fffb4/output/res/layout/place_autocomplete_fragment.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/build/intermediates/res/merged/debug/layout/activity_splash_fullscreen.xml",
+        "source": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/src/main/res/layout/activity_splash_fullscreen.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/build/intermediates/res/merged/debug/layout/notification_template_lines.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/notification_template_lines.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/build/intermediates/res/merged/debug/layout/design_navigation_menu.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/fa51afe1a612dcb923d0f4ccf75d0b763ff28669/output/res/layout/design_navigation_menu.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/build/intermediates/res/merged/debug/layout/notification_template_big_media.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/notification_template_big_media.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/build/intermediates/res/merged/debug/layout/notification_media_cancel_action.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/build/intermediates/res/merged/debug/layout/photos_item_view.xml",
+        "source": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/src/main/res/layout/photos_item_view.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/build/intermediates/res/merged/debug/layout/abc_list_menu_item_radio.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/build/intermediates/res/merged/debug/layout/notification_template_big_media.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/notification_template_big_media.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/build/intermediates/res/merged/debug/layout/design_bottom_sheet_dialog.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/fa51afe1a612dcb923d0f4ccf75d0b763ff28669/output/res/layout/design_bottom_sheet_dialog.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/build/intermediates/res/merged/debug/layout/abc_alert_dialog_material.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/abc_alert_dialog_material.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/build/intermediates/res/merged/debug/layout/news_headline_view.xml",
+        "source": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/src/main/res/layout/news_headline_view.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/build/intermediates/res/merged/debug/layout/abc_action_menu_item_layout.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/build/intermediates/res/merged/debug/layout/abc_screen_simple.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/abc_screen_simple.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/build/intermediates/res/merged/debug/layout/mr_media_route_controller_material_dialog_b.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/24615efc5952960b975bc9825f82f7808e7d9288/output/res/layout/mr_media_route_controller_material_dialog_b.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/build/intermediates/res/merged/debug/layout/notification_template_part_chronometer.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/build/intermediates/res/merged/debug/layout/grid_meizi_item.xml",
+        "source": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/src/main/res/layout/grid_meizi_item.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/build/intermediates/res/merged/debug/layout/notification_template_media.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/notification_template_media.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/build/intermediates/res/merged/debug/layout/notification_template_part_time.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/notification_template_part_time.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/build/intermediates/res/merged/debug/layout/abc_action_mode_close_item_material.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/build/intermediates/res/merged/debug/layout/design_text_input_password_icon.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/fa51afe1a612dcb923d0f4ccf75d0b763ff28669/output/res/layout/design_text_input_password_icon.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/build/intermediates/res/merged/debug/layout/design_layout_snackbar_include.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/fa51afe1a612dcb923d0f4ccf75d0b763ff28669/output/res/layout/design_layout_snackbar_include.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/build/intermediates/res/merged/debug/layout/support_simple_spinner_dropdown_item.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/build/intermediates/res/merged/debug/layout/select_dialog_item_material.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/select_dialog_item_material.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/build/intermediates/res/merged/debug/layout/abc_dialog_title_material.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/abc_dialog_title_material.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/build/intermediates/res/merged/debug/layout/abc_dialog_title_material.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/abc_dialog_title_material.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/build/intermediates/res/merged/debug/layout/abc_screen_simple_overlay_action_mode.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/build/intermediates/res/merged/debug/layout/design_navigation_menu_item.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/fa51afe1a612dcb923d0f4ccf75d0b763ff28669/output/res/layout/design_navigation_menu_item.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/build/intermediates/res/merged/debug/layout/lockscreen_activity_main.xml",
+        "source": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/src/main/res/layout/lockscreen_activity_main.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/build/intermediates/res/merged/debug/layout/abc_list_menu_item_icon.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/build/intermediates/res/merged/debug/layout/page_item_view.xml",
+        "source": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/src/main/res/layout/page_item_view.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/build/intermediates/res/merged/debug/layout/abc_expanded_menu_layout.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/build/intermediates/res/merged/debug/layout/abc_search_dropdown_item_icons_2line.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/build/intermediates/res/merged/debug/layout/news_board.xml",
+        "source": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/src/main/res/layout/news_board.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/build/intermediates/res/merged/debug/layout/design_navigation_item.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/fa51afe1a612dcb923d0f4ccf75d0b763ff28669/output/res/layout/design_navigation_item.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/build/intermediates/res/merged/debug/layout/design_navigation_item_header.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/fa51afe1a612dcb923d0f4ccf75d0b763ff28669/output/res/layout/design_navigation_item_header.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/build/intermediates/res/merged/debug/layout/design_navigation_item.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/fa51afe1a612dcb923d0f4ccf75d0b763ff28669/output/res/layout/design_navigation_item.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/build/intermediates/res/merged/debug/layout/abc_screen_simple_overlay_action_mode.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/build/intermediates/res/merged/debug/layout/abc_popup_menu_header_item_layout.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/abc_popup_menu_header_item_layout.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/build/intermediates/res/merged/debug/layout/fragment_recycle_view.xml",
+        "source": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/src/main/res/layout/fragment_recycle_view.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/build/intermediates/res/merged/debug/layout/page_item.xml",
+        "source": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/src/main/res/layout/page_item.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/build/intermediates/res/merged/debug/layout/grid_meizi_item.xml",
+        "source": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/src/main/res/layout/grid_meizi_item.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/build/intermediates/res/merged/debug/layout/design_layout_snackbar_include.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/fa51afe1a612dcb923d0f4ccf75d0b763ff28669/output/res/layout/design_layout_snackbar_include.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/build/intermediates/res/merged/debug/layout/abc_screen_toolbar.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/build/intermediates/res/merged/debug/layout/abc_popup_menu_header_item_layout.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/abc_popup_menu_header_item_layout.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/build/intermediates/res/merged/debug/layout/place_autocomplete_item_powered_by_google.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/a8e34772272713778cb25af755c027cd9c8fffb4/output/res/layout/place_autocomplete_item_powered_by_google.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/build/intermediates/res/merged/debug/layout/support_simple_spinner_dropdown_item.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/build/intermediates/res/merged/debug/layout/design_navigation_menu_item.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/fa51afe1a612dcb923d0f4ccf75d0b763ff28669/output/res/layout/design_navigation_menu_item.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/build/intermediates/res/merged/debug/layout/mr_media_route_chooser_dialog.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/24615efc5952960b975bc9825f82f7808e7d9288/output/res/layout/mr_media_route_chooser_dialog.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/build/intermediates/res/merged/debug/layout/abc_search_dropdown_item_icons_2line.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/build/intermediates/res/merged/debug/layout/select_dialog_multichoice_material.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/select_dialog_multichoice_material.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/build/intermediates/res/merged/debug/layout/select_dialog_item_material.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/select_dialog_item_material.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/build/intermediates/res/merged/debug/layout/notification_template_part_time.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/notification_template_part_time.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/build/intermediates/res/merged/debug/layout/design_text_input_password_icon.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/fa51afe1a612dcb923d0f4ccf75d0b763ff28669/output/res/layout/design_text_input_password_icon.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/build/intermediates/res/merged/debug/layout/fragment_native_ads.xml",
+        "source": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/src/main/res/layout/fragment_native_ads.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/build/intermediates/res/merged/debug/layout/design_navigation_menu.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/fa51afe1a612dcb923d0f4ccf75d0b763ff28669/output/res/layout/design_navigation_menu.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/build/intermediates/res/merged/debug/layout/fragment_native_ads.xml",
+        "source": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/src/main/res/layout/fragment_native_ads.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/build/intermediates/res/merged/debug/layout/mr_media_route_controller_material_dialog_b.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/24615efc5952960b975bc9825f82f7808e7d9288/output/res/layout/mr_media_route_controller_material_dialog_b.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/build/intermediates/res/merged/debug/layout/mr_media_route_chooser_dialog.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/24615efc5952960b975bc9825f82f7808e7d9288/output/res/layout/mr_media_route_chooser_dialog.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/build/intermediates/res/merged/debug/layout/place_autocomplete_fragment.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/a8e34772272713778cb25af755c027cd9c8fffb4/output/res/layout/place_autocomplete_fragment.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/build/intermediates/res/merged/debug/layout/page_item_view.xml",
+        "source": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/src/main/res/layout/page_item_view.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/build/intermediates/res/merged/debug/layout/unlock_layout_main.xml",
+        "source": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/src/main/res/layout/unlock_layout_main.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/build/intermediates/res/merged/debug/layout/page_item.xml",
+        "source": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/src/main/res/layout/page_item.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/build/intermediates/res/merged/debug/layout/notification_template_big_media_narrow.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/build/intermediates/res/merged/debug/layout/abc_action_menu_item_layout.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/build/intermediates/res/merged/debug/layout/select_dialog_multichoice_material.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/select_dialog_multichoice_material.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/build/intermediates/res/merged/debug/layout/abc_action_bar_view_list_nav_layout.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/abc_action_bar_view_list_nav_layout.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/build/intermediates/res/merged/debug/layout/abc_list_menu_item_icon.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/build/intermediates/res/merged/debug/layout/abc_screen_toolbar.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/build/intermediates/res/merged/debug/layout/pages.xml",
+        "source": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/src/main/res/layout/pages.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/build/intermediates/res/merged/debug/layout/place_autocomplete_progress.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/a8e34772272713778cb25af755c027cd9c8fffb4/output/res/layout/place_autocomplete_progress.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/build/intermediates/res/merged/debug/layout/design_bottom_sheet_dialog.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/fa51afe1a612dcb923d0f4ccf75d0b763ff28669/output/res/layout/design_bottom_sheet_dialog.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/build/intermediates/res/merged/debug/layout/abc_action_menu_layout.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/build/intermediates/res/merged/debug/layout/activity_splash_fullscreen.xml",
+        "source": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/src/main/res/layout/activity_splash_fullscreen.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/build/intermediates/res/merged/debug/layout/activity_pre_roll.xml",
+        "source": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/src/main/res/layout/activity_pre_roll.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/build/intermediates/res/merged/debug/layout/news_board.xml",
+        "source": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/src/main/res/layout/news_board.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/build/intermediates/res/merged/debug/layout/abc_popup_menu_item_layout.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/build/intermediates/res/merged/debug/layout/abc_alert_dialog_button_bar_material.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/build/intermediates/res/merged/debug/layout/unlock_layout_main.xml",
+        "source": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/src/main/res/layout/unlock_layout_main.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/build/intermediates/res/merged/debug/layout/design_layout_tab_icon.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/fa51afe1a612dcb923d0f4ccf75d0b763ff28669/output/res/layout/design_layout_tab_icon.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/build/intermediates/res/merged/debug/layout/notification_media_action.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/notification_media_action.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/build/intermediates/res/merged/debug/layout/pages.xml",
+        "source": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/src/main/res/layout/pages.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/build/intermediates/res/merged/debug/layout/abc_screen_content_include.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/abc_screen_content_include.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/build/intermediates/res/merged/debug/layout/design_menu_item_action_area.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/fa51afe1a612dcb923d0f4ccf75d0b763ff28669/output/res/layout/design_menu_item_action_area.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/build/intermediates/res/merged/debug/layout/abc_screen_simple.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/abc_screen_simple.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/build/intermediates/res/merged/debug/layout/fragment_recycle_view.xml",
+        "source": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/src/main/res/layout/fragment_recycle_view.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/build/intermediates/res/merged/debug/layout/abc_list_menu_item_layout.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/build/intermediates/res/merged/debug/layout/abc_list_menu_item_checkbox.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/build/intermediates/res/merged/debug/layout/abc_select_dialog_material.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/abc_select_dialog_material.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/build/intermediates/res/merged/debug/layout/notification_template_lines.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/notification_template_lines.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/build/intermediates/res/merged/debug/layout/design_layout_snackbar.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/fa51afe1a612dcb923d0f4ccf75d0b763ff28669/output/res/layout/design_layout_snackbar.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/build/intermediates/res/merged/debug/layout/abc_popup_menu_item_layout.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/build/intermediates/res/merged/debug/layout/design_layout_tab_icon.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/fa51afe1a612dcb923d0f4ccf75d0b763ff28669/output/res/layout/design_layout_tab_icon.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/build/intermediates/res/merged/debug/layout/abc_action_menu_layout.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/build/intermediates/res/merged/debug/layout/abc_action_bar_view_list_nav_layout.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/abc_action_bar_view_list_nav_layout.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/build/intermediates/res/merged/debug/layout/abc_select_dialog_material.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/abc_select_dialog_material.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/build/intermediates/res/merged/debug/layout/abc_action_bar_up_container.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/build/intermediates/res/merged/debug/layout/select_dialog_singlechoice_material.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/build/intermediates/res/merged/debug/layout/design_menu_item_action_area.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/fa51afe1a612dcb923d0f4ccf75d0b763ff28669/output/res/layout/design_menu_item_action_area.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/build/intermediates/res/merged/debug/layout/abc_action_mode_bar.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/build/intermediates/res/merged/debug/layout/design_navigation_item_separator.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/fa51afe1a612dcb923d0f4ccf75d0b763ff28669/output/res/layout/design_navigation_item_separator.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/build/intermediates/res/merged/debug/layout/activity_pre_roll.xml",
+        "source": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/src/main/res/layout/activity_pre_roll.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/build/intermediates/res/merged/debug/layout/news_tile_view.xml",
+        "source": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/src/main/res/layout/news_tile_view.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/build/intermediates/res/merged/debug/layout/news_tile_view.xml",
+        "source": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/src/main/res/layout/news_tile_view.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/build/intermediates/res/merged/debug/layout/notification_media_action.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/notification_media_action.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/build/intermediates/res/merged/debug/layout/abc_action_bar_up_container.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/build/intermediates/res/merged/debug/layout/design_navigation_item_subheader.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/fa51afe1a612dcb923d0f4ccf75d0b763ff28669/output/res/layout/design_navigation_item_subheader.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/build/intermediates/res/merged/debug/layout/design_layout_snackbar.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/fa51afe1a612dcb923d0f4ccf75d0b763ff28669/output/res/layout/design_layout_snackbar.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/build/intermediates/res/merged/debug/layout/abc_action_mode_bar.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/build/intermediates/res/merged/debug/layout/photos_item_view.xml",
+        "source": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/src/main/res/layout/photos_item_view.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/build/intermediates/res/merged/debug/layout/notification_template_big_media_narrow.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/build/intermediates/res/merged/debug/layout/abc_list_menu_item_layout.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/build/intermediates/res/merged/debug/layout/lockscreen_activity_main.xml",
+        "source": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/src/main/res/layout/lockscreen_activity_main.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/build/intermediates/res/merged/debug/layout/design_layout_tab_text.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/fa51afe1a612dcb923d0f4ccf75d0b763ff28669/output/res/layout/design_layout_tab_text.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/build/intermediates/res/merged/debug/layout/design_navigation_item_header.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/fa51afe1a612dcb923d0f4ccf75d0b763ff28669/output/res/layout/design_navigation_item_header.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/build/intermediates/res/merged/debug/layout/abc_action_mode_close_item_material.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/nativeAdSample/build/intermediates/res/merged/debug/layout/design_layout_tab_text.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/fa51afe1a612dcb923d0f4ccf75d0b763ff28669/output/res/layout/design_layout_tab_text.xml"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/Inmobi-Demo-China/nativeAdSample/build/intermediates/res/merged/debug/layout/abc_screen_content_include.xml",
+        "source": "/Users/bella.zhang/.android/build-cache/11f09bf3c017b873958489b149f849bb4bdde6b7/output/res/layout/abc_screen_content_include.xml"
+    }
+]

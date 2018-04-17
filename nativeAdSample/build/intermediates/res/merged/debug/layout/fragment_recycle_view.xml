@@ -1,0 +1,15 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.inmobi.nativead.sample.recycleview.RecycleViewFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <!--本文主角-->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/grid_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</FrameLayout>

@@ -1,1 +1,1 @@
-# InMobiNativeRebootAndroid
+# InmobiDemo-China

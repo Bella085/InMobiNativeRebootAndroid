@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/bannerSample/build/intermediates/res/merged/debug/mipmap-xxhdpi/ic_launcher.png",
+        "source": "/Users/bella.zhang/Documents/InMobiNativeRebootAndroid/bannerSample/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/bella.zhang/Documents/Inmobi-Demo-China/bannerSample/build/intermediates/res/merged/debug/mipmap-xxhdpi/ic_launcher.png",
+        "source": "/Users/bella.zhang/Documents/Inmobi-Demo-China/bannerSample/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+    }
+]
