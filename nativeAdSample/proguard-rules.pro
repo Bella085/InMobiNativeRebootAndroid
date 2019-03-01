@@ -39,3 +39,5 @@
 # skip Moat classes
 -keep class com.moat.** {*;}
 -dontwarn com.moat.**
+
+

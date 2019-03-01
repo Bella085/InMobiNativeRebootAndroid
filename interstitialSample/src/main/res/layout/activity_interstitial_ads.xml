@@ -21,8 +21,7 @@
         android:layout_below="@id/button_load_ad"
         android:id="@+id/button_show_ad"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="24dp"
-        android:visibility="gone" />
+         />
 
     <Button
         android:layout_width="wrap_content"
@@ -32,5 +31,5 @@
         android:id="@+id/button_show_ad_with_animation"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="24dp"
-        android:visibility="gone" />
+        />
 </RelativeLayout>

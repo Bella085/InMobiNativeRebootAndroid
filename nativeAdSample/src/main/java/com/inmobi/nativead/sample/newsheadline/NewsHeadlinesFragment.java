@@ -2,6 +2,7 @@ package com.inmobi.nativead.sample.newsheadline;
 
 import com.inmobi.ads.InMobiAdRequestStatus;
 import com.inmobi.ads.InMobiNative;
+import com.inmobi.ads.listeners.NativeAdEventListener;
 import com.inmobi.nativead.sample.Constants;
 import com.inmobi.nativead.sample.DataFetcher;
 import com.inmobi.nativead.sample.PlacementId;
@@ -164,11 +165,12 @@ public class NewsHeadlinesFragment extends ListFragment implements NativeProvide
     private void placeNativeAds() {
         for (int i = 0; i < AD_PLACEMENT_POSITIONS.length; i++) {
             final int position = AD_PLACEMENT_POSITIONS[i];
-            InMobiNative nativeAd = new InMobiNative(getActivity(), PlacementId.YOUR_PLACEMENT_ID_HEADERLINE, new InMobiNative.NativeAdListener() {
-                @Override
-                public void onAdLoadSucceeded(final InMobiNative inMobiNative) {
 
-                        JSONObject content = inMobiNative.getCustomAdContent();
+            InMobiNative nativeAd = new InMobiNative(getActivity(), PlacementId.YOUR_PLACEMENT_ID_HEADERLINE, new NativeAdEventListener() {
+                @Override
+                public void onAdLoadSucceeded(InMobiNative inMobiNative) {
+                    super.onAdLoadSucceeded(inMobiNative);
+                    JSONObject content = inMobiNative.getCustomAdContent();
 
                         Log.e(TAG, "onAdLoadSucceeded===" + content.toString());
                         NewsSnippet item = new NewsSnippet();
@@ -198,49 +200,52 @@ public class NewsHeadlinesFragment extends ListFragment implements NativeProvide
 
                 @Override
                 public void onAdLoadFailed(InMobiNative inMobiNative, InMobiAdRequestStatus inMobiAdRequestStatus) {
+                    super.onAdLoadFailed(inMobiNative, inMobiAdRequestStatus);
                     Log.e(TAG, "Failed to load ad. " + inMobiAdRequestStatus.getMessage());
                 }
 
                 @Override
-                public void onAdFullScreenDismissed(InMobiNative inMobiNative) {
-                    Log.e(TAG, "onAdFullScreenDismissed ");
+                public void onAdFullScreenDisplayed(InMobiNative inMobiNative) {
+                    super.onAdFullScreenDisplayed(inMobiNative);
+                    Log.e(TAG, "onAdFullScreenDisplayed ");
                 }
 
                 @Override
                 public void onAdFullScreenWillDisplay(InMobiNative inMobiNative) {
-
+                    super.onAdFullScreenWillDisplay(inMobiNative);
+                    Log.e(TAG, "onAdFullScreenDisplayed ");
                 }
 
                 @Override
-                public void onAdFullScreenDisplayed(InMobiNative inMobiNative) {
+                public void onAdFullScreenDismissed(InMobiNative inMobiNative) {
+                    super.onAdFullScreenDismissed(inMobiNative);
                     Log.e(TAG, "onAdFullScreenDisplayed ");
                 }
 
                 @Override
                 public void onUserWillLeaveApplication(InMobiNative inMobiNative) {
-                    Log.e(TAG, "onUserWillLeaveApplication ");
+                    super.onUserWillLeaveApplication(inMobiNative);
+                    Log.e(TAG, "onAdFullScreenDisplayed ");
                 }
 
                 @Override
-                public void onAdImpressed(@NonNull InMobiNative inMobiNative) {
-                    Log.e(TAG, "onAdImpressed ");
+                public void onAdImpressed(InMobiNative inMobiNative) {
+                    super.onAdImpressed(inMobiNative);
+                    Log.e(TAG, "onAdFullScreenDisplayed ");
                     Toast.makeText(NewsHeadlinesFragment.this.getContext(),"AdImpressed",Toast.LENGTH_SHORT).show();
                 }
 
                 @Override
-                public void onAdClicked(@NonNull InMobiNative inMobiNative) {
-                    Log.e(TAG, "onAdClicked ");
+                public void onAdClicked(InMobiNative inMobiNative) {
+                    super.onAdClicked(inMobiNative);
+                    Log.e(TAG, "onAdFullScreenDisplayed ");
                     Toast.makeText(NewsHeadlinesFragment.this.getContext(),"AdClicked",Toast.LENGTH_SHORT).show();
                 }
 
                 @Override
-                public void onMediaPlaybackComplete(@NonNull InMobiNative inMobiNative) {
-                    Log.e(TAG, "onMediaPlaybackComplete ");
-                }
-
-                @Override
-                public void onAdStatusChanged(@NonNull InMobiNative inMobiNative) {
-
+                public void onAdStatusChanged(InMobiNative inMobiNative) {
+                    super.onAdStatusChanged(inMobiNative);
+                    Log.e(TAG, "onAdFullScreenDisplayed ");
                     getListView().getChildAt(position).findViewById(R.id.pb);
                     if (inMobiNative.getDownloader().getDownloadStatus() == InMobiNative.Downloader.STATE_DOWNLOADING) {
                         Log.e(TAG, "onAdStatusChanged " + inMobiNative.getDownloader().getDownloadProgress());
@@ -251,12 +256,6 @@ public class NewsHeadlinesFragment extends ListFragment implements NativeProvide
 
                     }
                 }
-
-                @Override
-                public void onUserSkippedMedia(@NonNull InMobiNative inMobiNative) {
-
-                }
-
             });
             nativeAd.setDownloaderEnabled(true);
             nativeAd.load();

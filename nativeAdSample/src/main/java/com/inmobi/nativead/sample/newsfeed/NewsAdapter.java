@@ -9,9 +9,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import com.facebook.drawee.view.SimpleDraweeView;
 
 import java.lang.ref.WeakReference;
 import java.util.List;
@@ -40,7 +40,7 @@ public class NewsAdapter extends ArrayAdapter<NewsTileItem> {
             viewHolder = new ViewHolder();
             viewHolder.headline = (TextView) convertView.findViewById(R.id.caption);
             viewHolder.content = (TextView) convertView.findViewById(R.id.content);
-            viewHolder.icon = (SimpleDraweeView) convertView.findViewById(R.id.photo);
+            viewHolder.icon = (ImageView) convertView.findViewById(R.id.photo);
             viewHolder.tag = (TextView) convertView.findViewById(R.id.sponsored);
             viewHolder.pixview=(LinearLayout) convertView.findViewById(R.id.pixview);
             convertView.setTag(viewHolder);
@@ -83,7 +83,7 @@ public class NewsAdapter extends ArrayAdapter<NewsTileItem> {
         TextView headline;
         TextView content;
         TextView tag;
-        SimpleDraweeView icon;
+        ImageView icon;
         LinearLayout pixview;
     }
 }

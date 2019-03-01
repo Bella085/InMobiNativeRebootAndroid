@@ -2,9 +2,11 @@ package com.inmobi.nativead.sample.photopages;
 
 import com.inmobi.ads.InMobiAdRequestStatus;
 import com.inmobi.ads.InMobiNative;
+import com.inmobi.ads.listeners.NativeAdEventListener;
 import com.inmobi.nativead.sample.Constants;
 import com.inmobi.nativead.sample.PlacementId;
 import com.inmobi.nativead.sample.R;
+import com.inmobi.nativead.sample.newsfeed.NewsTileItem;
 import com.inmobi.nativead.sample.newsheadline.NewsHeadlinesFragment;
 
 import android.annotation.TargetApi;
@@ -77,11 +79,12 @@ public class PhotoPagesFragment extends Fragment implements NativeProvider {
     private void placeNativeAds() {
         for (int i = 0; i < AD_PLACEMENT_POSITIONS.length; i++) {
             final int position = AD_PLACEMENT_POSITIONS[i];
-            InMobiNative nativeAd = new InMobiNative(getActivity(), PlacementId.YOUR_PLACEMENT_ID_PHOTOPAGES, new InMobiNative.NativeAdListener() {
-                @Override
-                public void onAdLoadSucceeded(final InMobiNative inMobiNative) {
 
-                        JSONObject content = inMobiNative.getCustomAdContent();
+            InMobiNative nativeAd = new InMobiNative(getActivity(), PlacementId.YOUR_PLACEMENT_ID_PHOTOFEED, new NativeAdEventListener() {
+                @Override
+                public void onAdLoadSucceeded(InMobiNative inMobiNative) {
+                    super.onAdLoadSucceeded(inMobiNative);
+                    JSONObject content = inMobiNative.getCustomAdContent();
                         Log.e(TAG, "onAdLoadSucceeded" + content.toString());
                         PageItem item = new PageItem();
                         item.imageUrl =inMobiNative.getAdIconUrl();// content.getJSONObject(Constants.AdJsonKeys.AD_IMAGE_OBJECT).
@@ -93,61 +96,58 @@ public class PhotoPagesFragment extends Fragment implements NativeProvider {
                         Log.d(TAG, "Placed ad unit (" + inMobiNative.hashCode() +
                                 ") at position " + position);
 
+
                 }
 
                 @Override
                 public void onAdLoadFailed(InMobiNative inMobiNative, InMobiAdRequestStatus inMobiAdRequestStatus) {
+                    super.onAdLoadFailed(inMobiNative, inMobiAdRequestStatus);
                     Log.e(TAG, "Failed to load ad. " + inMobiAdRequestStatus.getMessage());
                 }
 
                 @Override
-                public void onAdFullScreenDismissed(InMobiNative inMobiNative) {
-                    Log.e(TAG, "onAdFullScreenDismissed. " );
+                public void onAdFullScreenDisplayed(InMobiNative inMobiNative) {
+                    super.onAdFullScreenDisplayed(inMobiNative);
+                    Log.e(TAG, "onAdFullScreenDisplayed ");
                 }
 
                 @Override
                 public void onAdFullScreenWillDisplay(InMobiNative inMobiNative) {
-
+                    super.onAdFullScreenWillDisplay(inMobiNative);
+                    Log.e(TAG, "onAdFullScreenDisplayed ");
                 }
 
                 @Override
-                public void onAdFullScreenDisplayed(InMobiNative inMobiNative) {
-                    Log.e(TAG, "onAdFullScreenDisplayed. " );
+                public void onAdFullScreenDismissed(InMobiNative inMobiNative) {
+                    super.onAdFullScreenDismissed(inMobiNative);
+                    Log.e(TAG, "onAdFullScreenDisplayed ");
                 }
 
                 @Override
                 public void onUserWillLeaveApplication(InMobiNative inMobiNative) {
-                    Log.e(TAG, "onUserWillLeaveApplication. " );
+                    super.onUserWillLeaveApplication(inMobiNative);
+                    Log.e(TAG, "onAdFullScreenDisplayed ");
                 }
 
                 @Override
-                public void onAdImpressed(@NonNull InMobiNative inMobiNative) {
-                    Log.e(TAG, "onAdImpressed. " );
-                    Toast.makeText(PhotoPagesFragment.this.getContext(),"AdImpressed",Toast.LENGTH_SHORT).show();
+                public void onAdImpressed(InMobiNative inMobiNative) {
+                    super.onAdImpressed(inMobiNative);
+                    Log.e(TAG, "onAdFullScreenDisplayed ");
+                    Toast.makeText(getActivity(),"AdImpressed",Toast.LENGTH_SHORT).show();
                 }
 
                 @Override
-                public void onAdClicked(@NonNull InMobiNative inMobiNative) {
-                    Log.e(TAG, "onAdClicked. " );
-                    Toast.makeText(PhotoPagesFragment.this.getContext(),"AdClicked",Toast.LENGTH_SHORT).show();
+                public void onAdClicked(InMobiNative inMobiNative) {
+                    super.onAdClicked(inMobiNative);
+                    Log.e(TAG, "onAdFullScreenDisplayed ");
+                    Toast.makeText(getActivity(),"AdClicked",Toast.LENGTH_SHORT).show();
                 }
 
                 @Override
-                public void onMediaPlaybackComplete(@NonNull InMobiNative inMobiNative) {
-                    Log.e(TAG, "onMediaPlaybackComplete. " );
+                public void onAdStatusChanged(InMobiNative inMobiNative) {
+                    super.onAdStatusChanged(inMobiNative);
+                    Log.e(TAG, "onAdFullScreenDisplayed ");
                 }
-
-                @Override
-                public void onAdStatusChanged(@NonNull InMobiNative inMobiNative) {
-
-                }
-
-                @Override
-                public void onUserSkippedMedia(@NonNull InMobiNative inMobiNative) {
-
-                }
-
-
             });
             Map<String,String>map=new HashMap<>();
             nativeAd.setExtras(map);

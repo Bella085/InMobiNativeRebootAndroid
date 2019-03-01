@@ -10,15 +10,13 @@
         android:layout_height="wrap_content"
         android:id="@+id/linearLayout">
 
-        <com.facebook.drawee.view.SimpleDraweeView
+        <ImageView
             android:id="@+id/photoicon"
             android:layout_width="64dp"
             android:layout_height="64dp"
-            fresco:placeholderImage="@mipmap/ic_launcher"
+            android:src="@mipmap/ic_launcher"
             android:layout_marginLeft="8dp"
-            android:layout_alignParentLeft="true"
-
-            android:layout_marginTop="0dp"
+            android:layout_alignParentLeft="false"
             android:layout_alignParentStart="true"
             android:layout_centerVertical="true" />
 
@@ -37,12 +35,12 @@
 
 
 
-    <com.facebook.drawee.view.SimpleDraweeView
+    <ImageView
         android:id="@+id/photo"
         android:layout_width="match_parent"
         android:layout_height="312dp"
-        fresco:actualImageScaleType = "centerCrop"
-        fresco:placeholderImage = "@mipmap/ic_launcher"
+        android:scaleType = "centerCrop"
+        android:src = "@mipmap/ic_launcher"
         android:layout_below="@+id/linearLayout"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
@@ -57,8 +55,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/default_sponsored_text"
-        android:layout_gravity="end"
-        android:visibility="gone" />
+        android:layout_gravity="end" />
 
     <LinearLayout
         android:id="@+id/container_view"

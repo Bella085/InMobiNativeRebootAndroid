@@ -19,7 +19,7 @@
             android:id="@+id/banner"
             android:layout_width="320dp"
             android:layout_height="50dp"
-            ads:placementId="1454773960607"
+            ads:placementId="plid-1498847765749"
             ads:refreshInterval="60"/>
 
 </LinearLayout>

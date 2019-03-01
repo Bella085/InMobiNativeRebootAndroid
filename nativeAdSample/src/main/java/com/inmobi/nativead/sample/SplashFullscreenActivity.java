@@ -14,9 +14,9 @@ import android.view.WindowManager;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
-import com.facebook.drawee.backends.pipeline.Fresco;
 import com.inmobi.ads.InMobiAdRequestStatus;
 import com.inmobi.ads.InMobiNative;
+import com.inmobi.ads.listeners.NativeAdEventListener;
 import com.inmobi.nativead.sample.newsheadline.NewsSnippet;
 import com.inmobi.sdk.InMobiSdk;
 
@@ -24,8 +24,6 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.lang.ref.WeakReference;
-import java.util.HashMap;
-import java.util.Map;
 
 import lockscreen.utils.LockScreen;
 
@@ -45,6 +43,7 @@ public class SplashFullscreenActivity extends AppCompatActivity implements View.
 
 
     private LinearLayout FrameLayoutView;
+    private boolean isIn = false;
 
     private Handler handler=new Handler(){
         @Override
@@ -70,12 +69,8 @@ public class SplashFullscreenActivity extends AppCompatActivity implements View.
 
         ActionBar myactionbar  = getSupportActionBar();
         myactionbar.hide();
-        //myactionbar.setHomeButtonEnabled(true);
-        //myactionbar.setDisplayOptions(ActionBar.DISPLAY_SHOW_HOME|ActionBar.DISPLAY_SHOW_TITLE);
 
         Log.e(TAG, "==onCreate");
-
-        Fresco.initialize(this);
 
         InMobiSdk.init(this, "35cd4640484c490d8d7b59484fa52952");
 
@@ -100,22 +95,25 @@ public class SplashFullscreenActivity extends AppCompatActivity implements View.
         count_down_view.setCountDownTimerListener(new CountDownView.CountDownTimerListener() {
             @Override
             public void onStartCount() {
-                //Toast.makeText(getApplicationContext(),"开始计时",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),"开始计时",Toast.LENGTH_SHORT).show();
             }
 
             @Override
             public void onFinishCount() {
-                //Toast.makeText(getApplicationContext(),"计时结束",Toast.LENGTH_SHORT).show();
-                //Intent intent = new Intent(SplashFullscreenActivity.this,NativeAdsActivity.class);
-                //SplashFullscreenActivity.this.startActivity(intent);
-                //SplashFullscreenActivity.this.finish();
+                Toast.makeText(getApplicationContext(),"计时结束",Toast.LENGTH_SHORT).show();
+                if(!isIn) {
+                    isIn = true;
+                    Intent intent = new Intent(SplashFullscreenActivity.this, NativeAdsActivity.class);
+                    SplashFullscreenActivity.this.startActivity(intent);
+                    SplashFullscreenActivity.this.finish();
+                }
             }
         });
         count_down_view.setOnClickListener(this);
         preroll_btn.setOnClickListener(this);
         preroll_btn.bringToFront();
 
-        nativeAd=new InMobiNative(SplashFullscreenActivity.this,PlacementId.INMOBI_SPLASH_PLACEMENT_STATIC, new InMobiNative.NativeAdListener() {
+        nativeAd=new InMobiNative(SplashFullscreenActivity.this,PlacementId.INMOBI_SPLASH_PLACEMENT_STATIC, new NativeAdEventListener(){
             @Override
             public void onAdLoadSucceeded(@NonNull InMobiNative inMobiNative) {
 
@@ -125,12 +123,14 @@ public class SplashFullscreenActivity extends AppCompatActivity implements View.
                     Log.e(TAG, "onAdLoadSucceeded===" + content.toString());
                     NewsSnippet item = new NewsSnippet();
                     item.title = inMobiNative.getAdTitle();//content.getString(Constants.AdJsonKeys.AD_TITLE);
-                    //item.landingUrl = content.getString(Constants.AdJsonKeys.AD_CLICK_URL);
                     item.imageUrl = inMobiNative.getAdIconUrl();//content.getJSONObject(Constants.AdJsonKeys.AD_IMAGE_OBJECT).
-                           // getString(Constants.AdJsonKeys.AD_IMAGE_URL);
                     item.description=inMobiNative.getAdDescription();//content.getString(Constants.AdJsonKeys.AD_DESCRIPTION);
-                    item.inMobiNative=new WeakReference<>(inMobiNative);
-                    //item.view =inMobiNative.getPrimaryViewOfWidth(mAdapter.,viewGroup,0);
+                try {
+                    item.isVideo = content.getBoolean("isVideo");
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+                item.inMobiNative=new WeakReference<>(inMobiNative);
                     FrameLayoutView.removeAllViews();
 
                 /**
@@ -156,7 +156,6 @@ public class SplashFullscreenActivity extends AppCompatActivity implements View.
 
             @Override
             public void onAdFullScreenWillDisplay(InMobiNative inMobiNative) {
-                String str="<div class=\"layui-col-xs3\" style=\"text-align:center;padding-left:10px;padding-right:10px\">";
             }
 
             @Override
@@ -182,68 +181,32 @@ public class SplashFullscreenActivity extends AppCompatActivity implements View.
 
             }
 
-            @Override
-            public void onMediaPlaybackComplete(@NonNull InMobiNative inMobiNative) {
-                Log.e(TAG, "<fieldset class=\"layui-elem-field\">\n" +
-                        "\t                  <legend>Title</legend>\n" +
-                        "\t                  <div class=\"layui-field-box\">\n" +
-                        "\t                     <div class=\"m\">\n" +
-                        "\t\t\t\t\t\t\t  <video id=\"my-video\" class=\"video-js\" controls preload=\"auto\" width=\"300\"\n" +
-                        "\t\t\t\t\t\t\t  poster=\"m.png\" data-setup=\"{}\">\n" +
-                        "\t\t\t\t\t\t\t\t<source src=\"http://jq22com.qiniudn.com/jq22-sp.mp4\" type=\"video/mp4\">\t\t\t\t\t\n" +
-                        "\t\t\t\t\t\t\t  </video>\t\t\t\t\t\t\t  \n" +
-                        "\t\t                 </div>\n" +
-                        "\t\t                 <div class=\"layui-row\" style=\"margin-top: 10px;\">\n" +
-                        "\t\t\t\t\t\t\t\t    <div class=\"layui-col-xs6\">\n" +
-                        "\t\t\t\t\t\t\t\t      <div style=\"font-size:15px;\">在线</div>\n" +
-                        "\t\t\t\t\t\t\t\t    </div>\n" +
-                        "\t\t\t\t\t\t\t\t    <div class=\"layui-col-xs6\" style=\"text-align:right;\">\n" +
-                        "\t\t\t\t\t\t\t\t      <div><button class=\"layui-btn layui-btn-normal layui-btn-radius\">下架</button></div> \n" +
-                        "\t\t\t\t\t\t\t\t    </div>\n" +
-                        "\t\t\t\t\t\t\t\t  </div>\n" +
-                        "\t                  </div>\n" +
-                        "\t            </fieldset>");
-            }
 
             @Override
             public void onAdStatusChanged(@NonNull InMobiNative inMobiNative) {
                 if (inMobiNative.getDownloader().getDownloadStatus() == InMobiNative.Downloader.STATE_DOWNLOADING) {
-                    //button.setText("" + nativeAd.getDownloader().getDownloadProgress());
                     Log.e(TAG, "onAdStatusChanged "+inMobiNative.getDownloader().getDownloadProgress());
-//                    mAdapter.getItemView(position,inMobiNative.getDownloader().getDownloadProgress());
                 }
                 if (inMobiNative.getDownloader().getDownloadStatus() == InMobiNative.Downloader.STATE_DOWNLOADED) {
-                    //button.setText("OPEN");
                     Log.e(TAG, "onAdStatusChanged OPEN");
                 }
             }
-
-            @Override
-            public void onUserSkippedMedia(@NonNull InMobiNative inMobiNative) {
-
-            }
         });
 
-        Map<String,String> map=new HashMap<>();
-        //map.put("tp","c_admob");
-        Log.d("da",nativeAd.getCustomAdContent() + "") ;
-        nativeAd.setExtras(map);
         nativeAd.setDownloaderEnabled(true);
         nativeAd.load();
 
         Log.e(TAG, "==onCreate load==");
         handler.sendEmptyMessageDelayed(0,1000);
-
-
-        LockScreen.getInstance().init(this,true);
+//锁屏
+//        LockScreen.getInstance().init(this,true);
         //激活LockScreen
-        if(!LockScreen.getInstance().isActive())
-        {
-            LockScreen.getInstance().active();
-        }
+//        if(!LockScreen.getInstance().isActive())
+//        {
+//            LockScreen.getInstance().active();
+//        }
 
     }
-
 
 
     @Override
@@ -251,7 +214,6 @@ public class SplashFullscreenActivity extends AppCompatActivity implements View.
         super.onPostCreate(savedInstanceState);
 
     }
-
 
     @Override
     protected void onDestroy() {
@@ -264,10 +226,12 @@ public class SplashFullscreenActivity extends AppCompatActivity implements View.
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.countDownView:
-                //count_down_view.start();
-                Intent intent = new Intent(SplashFullscreenActivity.this,NativeAdsActivity.class);
-                SplashFullscreenActivity.this.startActivity(intent);
-                SplashFullscreenActivity.this.finish();
+                if(!isIn) {
+                    isIn = true;
+                    Intent intent = new Intent(SplashFullscreenActivity.this, NativeAdsActivity.class);
+                    SplashFullscreenActivity.this.startActivity(intent);
+                    SplashFullscreenActivity.this.finish();
+                }
                 break;
             case R.id.PreRollBtn:
                 Intent intent1 = new Intent(SplashFullscreenActivity.this,PreRollActivity.class);
@@ -277,7 +241,6 @@ public class SplashFullscreenActivity extends AppCompatActivity implements View.
         }
 
     }
-
 
     @Override
     protected void onPause() {

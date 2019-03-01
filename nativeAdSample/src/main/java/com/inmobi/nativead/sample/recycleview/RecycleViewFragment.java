@@ -3,7 +3,6 @@ package com.inmobi.nativead.sample.recycleview;
 import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
@@ -12,9 +11,11 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.inmobi.ads.InMobiAdRequestStatus;
 import com.inmobi.ads.InMobiNative;
+import com.inmobi.ads.listeners.NativeAdEventListener;
 import com.inmobi.nativead.sample.PlacementId;
 import com.inmobi.nativead.sample.R;
 
@@ -111,9 +112,10 @@ public class RecycleViewFragment extends Fragment {
         return view;
     }
 
-    private InMobiNative.NativeAdListener listener=new InMobiNative.NativeAdListener() {
+    private NativeAdEventListener listener=new NativeAdEventListener() {
         @Override
-        public void onAdLoadSucceeded(@NonNull InMobiNative inMobiNative) {
+        public void onAdLoadSucceeded(InMobiNative inMobiNative) {
+            super.onAdLoadSucceeded(inMobiNative);
             Log.e(TAG,"onAdLoadSucceeded");
             Meizi data=new Meizi();
 
@@ -128,56 +130,58 @@ public class RecycleViewFragment extends Fragment {
 
             mAdapter.notifyDataSetChanged();
             //http://imgsrc.baidu.com/image/c0%3Dshijue1%2C0%2C0%2C294%2C40/sign=3d2175db3cd3d539d530078052ee8325/b7003af33a87e950c1e1a6491a385343fbf2b425.jpg
+
+
         }
 
         @Override
-        public void onAdLoadFailed(@NonNull InMobiNative inMobiNative, @NonNull InMobiAdRequestStatus inMobiAdRequestStatus) {
-            Log.e(TAG,"onAdLoadFailed");
-        }
-
-        @Override
-        public void onAdFullScreenDismissed(InMobiNative inMobiNative) {
-            Log.e(TAG,"onAdFullScreenDismissed");
-        }
-
-        @Override
-        public void onAdFullScreenWillDisplay(InMobiNative inMobiNative) {
-            Log.e(TAG,"onAdFullScreenWillDisplay");
+        public void onAdLoadFailed(InMobiNative inMobiNative, InMobiAdRequestStatus inMobiAdRequestStatus) {
+            super.onAdLoadFailed(inMobiNative, inMobiAdRequestStatus);
+            Log.e(TAG, "Failed to load ad. " + inMobiAdRequestStatus.getMessage());
         }
 
         @Override
         public void onAdFullScreenDisplayed(InMobiNative inMobiNative) {
-            Log.e(TAG,"onAdFullScreenDisplayed");
+            super.onAdFullScreenDisplayed(inMobiNative);
+            Log.e(TAG, "onAdFullScreenDisplayed ");
+        }
+
+        @Override
+        public void onAdFullScreenWillDisplay(InMobiNative inMobiNative) {
+            super.onAdFullScreenWillDisplay(inMobiNative);
+            Log.e(TAG, "onAdFullScreenDisplayed ");
+        }
+
+        @Override
+        public void onAdFullScreenDismissed(InMobiNative inMobiNative) {
+            super.onAdFullScreenDismissed(inMobiNative);
+            Log.e(TAG, "onAdFullScreenDisplayed ");
         }
 
         @Override
         public void onUserWillLeaveApplication(InMobiNative inMobiNative) {
-            Log.e(TAG,"onUserWillLeaveApplication");
+            super.onUserWillLeaveApplication(inMobiNative);
+            Log.e(TAG, "onAdFullScreenDisplayed ");
         }
 
         @Override
-        public void onAdImpressed(@NonNull InMobiNative inMobiNative) {
-            Log.e(TAG,"onAdImpressed");
+        public void onAdImpressed(InMobiNative inMobiNative) {
+            super.onAdImpressed(inMobiNative);
+            Log.e(TAG, "onAdFullScreenDisplayed ");
+            Toast.makeText(getActivity(),"AdImpressed",Toast.LENGTH_SHORT).show();
         }
 
         @Override
-        public void onAdClicked(@NonNull InMobiNative inMobiNative) {
-            Log.e(TAG,"onAdClicked");
+        public void onAdClicked(InMobiNative inMobiNative) {
+            super.onAdClicked(inMobiNative);
+            Log.e(TAG, "onAdFullScreenDisplayed ");
+            Toast.makeText(getActivity(),"AdClicked",Toast.LENGTH_SHORT).show();
         }
 
         @Override
-        public void onMediaPlaybackComplete(@NonNull InMobiNative inMobiNative) {
-            Log.e(TAG,"onMediaPlaybackComplete");
-        }
-
-        @Override
-        public void onAdStatusChanged(@NonNull InMobiNative inMobiNative) {
-            Log.e(TAG,"onAdStatusChanged");
-        }
-
-        @Override
-        public void onUserSkippedMedia(@NonNull InMobiNative inMobiNative) {
-
+        public void onAdStatusChanged(InMobiNative inMobiNative) {
+            super.onAdStatusChanged(inMobiNative);
+            Log.e(TAG, "onAdFullScreenDisplayed ");
         }
     };
 

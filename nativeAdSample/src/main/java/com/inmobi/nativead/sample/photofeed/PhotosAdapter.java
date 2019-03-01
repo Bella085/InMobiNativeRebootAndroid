@@ -2,19 +2,25 @@ package com.inmobi.nativead.sample.photofeed;
 
 import com.inmobi.ads.InMobiNative;
 import com.inmobi.nativead.sample.R;
+import com.squareup.picasso.Picasso;
 
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import com.facebook.drawee.view.SimpleDraweeView;
 
+import java.io.IOException;
 import java.lang.ref.WeakReference;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.List;
 
 public class PhotosAdapter extends ArrayAdapter<PhotosFeedItem> {
@@ -39,9 +45,9 @@ public class PhotosAdapter extends ArrayAdapter<PhotosFeedItem> {
             convertView = mInflater.inflate(R.layout.photos_item_view, parent, false);
             viewHolder = new ViewHolder();
             viewHolder.title = (TextView) convertView.findViewById(R.id.caption);
-            viewHolder.image = (SimpleDraweeView) convertView.findViewById(R.id.photo);
+            viewHolder.image = (ImageView) convertView.findViewById(R.id.photo);
             viewHolder.tag = (TextView) convertView.findViewById(R.id.sponsored);
-            viewHolder.icon=(SimpleDraweeView)convertView.findViewById(R.id.photoicon);
+            viewHolder.icon=(ImageView)convertView.findViewById(R.id.photoicon);
             viewHolder.desc=(TextView) convertView.findViewById(R.id.destextView);
             viewHolder.con_view=(LinearLayout)convertView.findViewById(R.id.container_view);
             convertView.setTag(viewHolder);
@@ -69,14 +75,13 @@ public class PhotosAdapter extends ArrayAdapter<PhotosFeedItem> {
             if (nativeAd != null) {
                 Log.e("Photo Adapter==","Photo Adapter==!=NULL");
                 viewHolder.tag.setVisibility(View.VISIBLE);
-                viewHolder.tag.setText("Sponsored");
                 viewHolder.image.setVisibility(View.GONE);
-                //InMobiNative.bind(convertView, nativeAd);
                 viewHolder.con_view.setVisibility(View.VISIBLE);
                 viewHolder.icon.setVisibility(View.VISIBLE);
                 viewHolder.desc.setVisibility(View.VISIBLE);
 
-                viewHolder.icon.setImageURI(Uri.parse(photosFeedItem.imageUrl));
+
+                Picasso.with(getContext()).load(photosFeedItem.imageUrl).into(viewHolder.icon);
                 viewHolder.desc.setText(photosFeedItem.description);
                 viewHolder.con_view.removeAllViews();
                 viewHolder.con_view.addView(nativeAd.getPrimaryViewOfWidth(mContext,viewHolder.con_view,parent,0));
@@ -95,7 +100,7 @@ public class PhotosAdapter extends ArrayAdapter<PhotosFeedItem> {
 
     private class ViewHolder {
         TextView title;
-        SimpleDraweeView image,icon;
+        ImageView image,icon;
         TextView tag,desc;
         LinearLayout con_view;
     }

@@ -14,10 +14,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-import com.facebook.drawee.view.SimpleDraweeView;
 
 import java.util.List;
 import java.util.Random;
@@ -48,7 +48,7 @@ public class FeedAdapter extends ArrayAdapter<NewsSnippet> {
             viewHolder = new ViewHolder();
             viewHolder.headline = (TextView) convertView.findViewById(R.id.caption);
             viewHolder.content = (TextView) convertView.findViewById(R.id.content);
-            viewHolder.icon = (SimpleDraweeView) convertView.findViewById(R.id.photo);
+            viewHolder.icon = (ImageView) convertView.findViewById(R.id.photo);
             viewHolder.tag = (TextView) convertView.findViewById(R.id.sponsored);
             viewHolder.con_view=(LinearLayout)convertView.findViewById(R.id.container_view);
             viewHolder.con_view_small=(LinearLayout)convertView.findViewById(R.id.container_view_small);
@@ -196,7 +196,7 @@ public class FeedAdapter extends ArrayAdapter<NewsSnippet> {
         TextView headline;
         TextView content;
         TextView tag;
-        SimpleDraweeView icon;
+        ImageView icon;
         LinearLayout con_view,con_view_small;
         ProgressBar pb;
         Button btn;

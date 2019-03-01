@@ -12,6 +12,7 @@ public class NewsSnippet {
     public String content;
     public String landingUrl;
     public String description;
+    public Boolean isVideo;
     public int progress = 0;
     public WeakReference<InMobiNative> inMobiNative;
     public boolean isBig;

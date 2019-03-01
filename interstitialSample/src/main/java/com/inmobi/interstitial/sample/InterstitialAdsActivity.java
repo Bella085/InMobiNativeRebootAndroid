@@ -2,6 +2,7 @@ package com.inmobi.interstitial.sample;
 
 import com.inmobi.ads.InMobiAdRequestStatus;
 import com.inmobi.ads.InMobiInterstitial;
+import com.inmobi.ads.listeners.InterstitialAdEventListener;
 import com.inmobi.sdk.InMobiSdk;
 
 import android.os.Bundle;
@@ -18,7 +19,7 @@ public class InterstitialAdsActivity extends AppCompatActivity {
     private Button mLoadAdButton;
     private Button mShowAdButton;
     private Button mShowAdWithAnimation;
-    private final String TAG = "Inmobi";
+    private final String TAG = "InterstitialAdsActivity";
 
 
     @Override
@@ -40,6 +41,9 @@ public class InterstitialAdsActivity extends AppCompatActivity {
         mLoadAdButton = (Button) findViewById(R.id.button_load_ad);
         mShowAdButton = (Button) findViewById(R.id.button_show_ad);
         mShowAdWithAnimation = (Button) findViewById(R.id.button_show_ad_with_animation);
+
+        setupInterstitial();
+
         mLoadAdButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -59,80 +63,94 @@ public class InterstitialAdsActivity extends AppCompatActivity {
                 mInterstitialAd.show();
             }
         });
-        setupInterstitial();
+
     }
 
     @Override
     public void onResume() {
         super.onResume();
-        if (mShowAdButton != null) {
-            mShowAdButton.setVisibility(View.GONE);
-            mShowAdWithAnimation.setVisibility(View.GONE);
-        }
+//        if (mShowAdButton != null) {
+//            mShowAdButton.setVisibility(View.GONE);
+//            mShowAdWithAnimation.setVisibility(View.GONE);
+//        }
     }
 
-    private void setupInterstitial() {
-        mInterstitialAd = new InMobiInterstitial(InterstitialAdsActivity.this, PlacementId.YOUR_PLACEMENT_ID,
-                new InMobiInterstitial.InterstitialAdListener2() {
-                    @Override
-                    public void onAdLoadFailed(InMobiInterstitial inMobiInterstitial, InMobiAdRequestStatus inMobiAdRequestStatus) {
-                        Log.d(TAG, "Unable to load interstitial ad (error message: " +
-                                inMobiAdRequestStatus.getMessage()+"ID:"+PlacementId.YOUR_PLACEMENT_ID);
-                    }
+       private void setupInterstitial() {
 
-                    @Override
-                    public void onAdReceived(InMobiInterstitial inMobiInterstitial) {
-                        Log.d(TAG, "onAdReceived"+"ID:"+PlacementId.YOUR_PLACEMENT_ID);
-                    }
+           mInterstitialAd = new InMobiInterstitial(this, PlacementId.YOUR_PLACEMENT_ID, new InterstitialAdEventListener() {
+               @Override
+               public void onAdLoadSucceeded(InMobiInterstitial inMobiInterstitial) {
+                   super.onAdLoadSucceeded(inMobiInterstitial);
+                   Log.e(TAG, "interstitial_____onAdLoadSucceeded");
+               }
 
-                    @Override
-                    public void onAdLoadSucceeded(InMobiInterstitial inMobiInterstitial) {
-                        Log.d(TAG, "onAdLoadSuccessful"+"ID:"+PlacementId.YOUR_PLACEMENT_ID);
-                        if (inMobiInterstitial.isReady()) {
-                            if (mShowAdButton != null) {
-                                mShowAdButton.setVisibility(View.VISIBLE);
-                                mShowAdWithAnimation.setVisibility(View.VISIBLE);
+               @Override
+               public void onAdLoadFailed(InMobiInterstitial inMobiInterstitial, InMobiAdRequestStatus inMobiAdRequestStatus) {
+                   super.onAdLoadFailed(inMobiInterstitial, inMobiAdRequestStatus);
+                   Log.e(TAG, "interstitial_____onAdLoadFailed"+"..."+inMobiAdRequestStatus);
+               }
 
-                            }
-                        } else {
-                            Log.d(TAG, "onAdLoadSuccessful inMobiInterstitial not ready");
-                        }
-                    }
+               @Override
+               public void onAdReceived(InMobiInterstitial inMobiInterstitial) {
+                   super.onAdReceived(inMobiInterstitial);
+                   Log.e(TAG, "interstitial_____onAdReceived");
+               }
 
-                    @Override
-                    public void onAdRewardActionCompleted(InMobiInterstitial inMobiInterstitial, Map<Object, Object> map) {
-                        Log.d(TAG, "onAdRewardActionCompleted " + map.size());
-                    }
+               @Override
+               public void onAdClicked(InMobiInterstitial inMobiInterstitial, Map<Object, Object> map) {
+                   super.onAdClicked(inMobiInterstitial, map);
+                   Log.e(TAG, "interstitial_____onAdClicked");
+               }
 
-                    @Override
-                    public void onAdDisplayFailed(InMobiInterstitial inMobiInterstitial) {
-                        Log.d(TAG, "onAdDisplayFailed " + "FAILED");
-                    }
+               @Override
+               public void onAdWillDisplay(InMobiInterstitial inMobiInterstitial) {
+                   super.onAdWillDisplay(inMobiInterstitial);
+                   Log.e(TAG, "interstitial_____onAdWillDisplay");
+               }
 
-                    @Override
-                    public void onAdWillDisplay(InMobiInterstitial inMobiInterstitial) {
-                        Log.d(TAG, "onAdWillDisplay " + inMobiInterstitial);
-                    }
+               @Override
+               public void onAdDisplayed(InMobiInterstitial inMobiInterstitial) {
+                   super.onAdDisplayed(inMobiInterstitial);
+                   Log.e(TAG, "interstitial_____onAdDisplayed");
+               }
 
-                    @Override
-                    public void onAdDisplayed(InMobiInterstitial inMobiInterstitial) {
-                        Log.d(TAG, "onAdDisplayed " + inMobiInterstitial);
-                    }
+               @Override
+               public void onAdDisplayFailed(InMobiInterstitial inMobiInterstitial) {
+                   super.onAdDisplayFailed(inMobiInterstitial);
+                   Log.e(TAG, "interstitial_____onAdDisplayFailed");
+               }
 
-                    @Override
-                    public void onAdInteraction(InMobiInterstitial inMobiInterstitial, Map<Object, Object> map) {
-                        Log.d(TAG, "onAdInteraction " + inMobiInterstitial);
-                    }
+               @Override
+               public void onAdDismissed(InMobiInterstitial inMobiInterstitial) {
+                   super.onAdDismissed(inMobiInterstitial);
+                   Log.e(TAG, "interstitial_____onAdDismissed");
+               }
 
-                    @Override
-                    public void onAdDismissed(InMobiInterstitial inMobiInterstitial) {
-                        Log.d(TAG, "onAdDismissed " + inMobiInterstitial);
-                    }
+               @Override
+               public void onUserLeftApplication(InMobiInterstitial inMobiInterstitial) {
+                   super.onUserLeftApplication(inMobiInterstitial);
+                   Log.e(TAG, "interstitial_____onUserLeftApplication");
+               }
 
-                    @Override
-                    public void onUserLeftApplication(InMobiInterstitial inMobiInterstitial) {
-                        Log.d(TAG, "onUserWillLeaveApplication " + inMobiInterstitial);
-                    }
-                });
+               @Override
+               public void onRewardsUnlocked(InMobiInterstitial inMobiInterstitial, Map<Object, Object> map) {
+                   super.onRewardsUnlocked(inMobiInterstitial, map);
+                   Log.e(TAG, "interstitial_____onRewardsUnlocked");
+               }
+
+               @Override
+               public void onRequestPayloadCreated(byte[] bytes) {
+                   super.onRequestPayloadCreated(bytes);
+                   Log.e(TAG, "interstitial_____onRequestPayloadCreated");
+               }
+
+               @Override
+               public void onRequestPayloadCreationFailed(InMobiAdRequestStatus inMobiAdRequestStatus) {
+                   super.onRequestPayloadCreationFailed(inMobiAdRequestStatus);
+                   Log.e(TAG, "interstitial_____onRequestPayloadCreationFailed");
+               }
+
+           });
+
     }
 }

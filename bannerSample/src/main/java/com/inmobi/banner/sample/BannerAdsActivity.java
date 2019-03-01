@@ -3,6 +3,7 @@ package com.inmobi.banner.sample;
 import com.inmobi.ads.InMobiAdRequestStatus;
 import com.inmobi.ads.InMobiBanner;
 import com.inmobi.ads.InMobiNative;
+import com.inmobi.ads.listeners.BannerAdEventListener;
 import com.inmobi.sdk.InMobiSdk;
 
 import android.app.AlertDialog;
@@ -93,43 +94,61 @@ public class BannerAdsActivity extends AppCompatActivity {
         mBannerAd = new InMobiBanner(BannerAdsActivity.this, PlacementId.YOUR_PLACEMENT_ID);
         RelativeLayout adContainer = (RelativeLayout) findViewById(R.id.ad_container);
         mBannerAd.setAnimationType(InMobiBanner.AnimationType.ROTATE_HORIZONTAL_AXIS);
-        mBannerAd.setListener(new InMobiBanner.BannerAdListener() {
+        mBannerAd.setListener(new BannerAdEventListener() {
             @Override
             public void onAdLoadSucceeded(InMobiBanner inMobiBanner) {
-                Log.d(TAG, "onAdLoadSucceeded");
+                super.onAdLoadSucceeded(inMobiBanner);
+                Log.e("InmobiBanner","banner_______onAdLoadSucceeded");
             }
 
             @Override
-            public void onAdLoadFailed(InMobiBanner inMobiBanner,
-                                       InMobiAdRequestStatus inMobiAdRequestStatus) {
-                Log.d(TAG, "Banner ad failed to load with error: " +
-                        inMobiAdRequestStatus.getMessage());
+            public void onAdLoadFailed(InMobiBanner inMobiBanner, InMobiAdRequestStatus inMobiAdRequestStatus) {
+                super.onAdLoadFailed(inMobiBanner, inMobiAdRequestStatus);
+                Log.e("InmobiBanner","banner_______onAdLoadFailed");
+            }
+
+            @Override
+            public void onAdClicked(InMobiBanner inMobiBanner, Map<Object, Object> map) {
+                super.onAdClicked(inMobiBanner, map);
+                Log.e("InmobiBanner","banner_______onAdClicked");
             }
 
             @Override
             public void onAdDisplayed(InMobiBanner inMobiBanner) {
-                Log.d(TAG, "onAdDisplayed");
+                super.onAdDisplayed(inMobiBanner);
+                Log.e("InmobiBanner","banner_______onAdDisplayed");
             }
 
             @Override
             public void onAdDismissed(InMobiBanner inMobiBanner) {
-                Log.d(TAG, "onAdDismissed");
-            }
-
-            @Override
-            public void onAdInteraction(InMobiBanner inMobiBanner, Map<Object, Object> map) {
-                Log.d(TAG, "onAdInteraction");
+                super.onAdDismissed(inMobiBanner);
+                Log.e("InmobiBanner","banner_______onAdDismissed");
             }
 
             @Override
             public void onUserLeftApplication(InMobiBanner inMobiBanner) {
-                Log.d(TAG, "onUserLeftApplication");
+                super.onUserLeftApplication(inMobiBanner);
+                Log.e("InmobiBanner","banner_______onUserLeftApplication");
             }
 
             @Override
-            public void onAdRewardActionCompleted(InMobiBanner inMobiBanner, Map<Object, Object> map) {
-                Log.d(TAG, "onAdRewardActionCompleted");
+            public void onRewardsUnlocked(InMobiBanner inMobiBanner, Map<Object, Object> map) {
+                super.onRewardsUnlocked(inMobiBanner, map);
+                Log.e("InmobiBanner","banner_______onRewardsUnlocked");
             }
+
+            @Override
+            public void onRequestPayloadCreated(byte[] bytes) {
+                super.onRequestPayloadCreated(bytes);
+                Log.e("InmobiBanner","banner_______onRequestPayloadCreated");
+            }
+
+            @Override
+            public void onRequestPayloadCreationFailed(InMobiAdRequestStatus inMobiAdRequestStatus) {
+                super.onRequestPayloadCreationFailed(inMobiAdRequestStatus);
+                Log.e("InmobiBanner","banner_______onRequestPayloadCreationFailed");
+            }
+
         });
         setBannerLayoutParams();
         adContainer.addView(mBannerAd);
@@ -237,7 +256,7 @@ public class BannerAdsActivity extends AppCompatActivity {
                     feedEntry.isSponsored = false;
                     mItemList.add(feedEntry);
                 } catch (JSONException e) {
-                    Log.d(TAG, e.toString());
+                    Log.e(TAG, e.toString());
                 }
             }
             mAdapter.notifyDataSetChanged();

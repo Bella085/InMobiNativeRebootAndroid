@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 import com.inmobi.ads.InMobiAdRequestStatus;
 import com.inmobi.ads.InMobiNative;
+import com.inmobi.ads.listeners.NativeAdEventListener;
 import com.inmobi.nativead.sample.PlacementId;
 import com.inmobi.nativead.sample.R;
 
@@ -48,65 +49,134 @@ public class LockScreenActivity extends AppCompatActivity {
             }
         });
 
-        nativeAd=new InMobiNative(this, PlacementId.YOUR_PLACEMENT_ID_RECYCLEVIEW, new InMobiNative.NativeAdListener() {
+//        nativeAd=new InMobiNative(this, PlacementId.YOUR_PLACEMENT_ID_RECYCLEVIEW, new InMobiNative.NativeAdListener() {
+//            @Override
+//            public void onAdLoadSucceeded(@NonNull InMobiNative inMobiNative) {
+//                Log.e("LockScreenActivity","onAdLoadSucceeded");
+//                container.removeAllViews();
+//                container.addView(inMobiNative.getPrimaryViewOfWidth(LockScreenActivity.this,container,container,container.getWidth()));
+//            }
+//
+//            @Override
+//            public void onAdLoadFailed(@NonNull InMobiNative inMobiNative, @NonNull InMobiAdRequestStatus inMobiAdRequestStatus) {
+//                Log.e("LockScreenActivity","onAdLoadFailed");
+//            }
+//
+//            @Override
+//            public void onAdFullScreenDismissed(InMobiNative inMobiNative) {
+//                Log.e("LockScreenActivity","onAdFullScreenDismissed");
+//            }
+//
+//            @Override
+//            public void onAdFullScreenWillDisplay(InMobiNative inMobiNative) {
+//                Log.e("LockScreenActivity","onAdFullScreenWillDisplay");
+//            }
+//
+//            @Override
+//            public void onAdFullScreenDisplayed(InMobiNative inMobiNative) {
+//                Log.e("LockScreenActivity","onAdFullScreenDisplayed");
+//            }
+//
+//            @Override
+//            public void onUserWillLeaveApplication(InMobiNative inMobiNative) {
+//                Log.e("LockScreenActivity","onUserWillLeaveApplication");
+//            }
+//
+//            @Override
+//            public void onAdImpressed(@NonNull InMobiNative inMobiNative) {
+//                Log.e("LockScreenActivity","onAdImpressed");
+//            }
+//
+//            @Override
+//            public void onAdClicked(@NonNull InMobiNative inMobiNative) {
+//                Log.e("LockScreenActivity","onAdClicked");
+//            }
+//
+//            @Override
+//            public void onMediaPlaybackComplete(@NonNull InMobiNative inMobiNative) {
+//                Log.e("LockScreenActivity","onMediaPlaybackComplete");
+//            }
+//
+//            @Override
+//            public void onAdStatusChanged(@NonNull InMobiNative inMobiNative) {
+//                Log.e("LockScreenActivity","onAdStatusChanged");
+//            }
+//
+//            @Override
+//            public void onUserSkippedMedia(@NonNull InMobiNative inMobiNative) {
+//                Log.e("LockScreenActivity","onUserSkippedMedia");
+//            }
+//        });
+
+        nativeAd=new InMobiNative(this, PlacementId.INMOBI_SPLASH_PLACEMENT_STATIC, new NativeAdEventListener() {
             @Override
-            public void onAdLoadSucceeded(@NonNull InMobiNative inMobiNative) {
+            public void onAdLoadSucceeded(InMobiNative inMobiNative) {
+                super.onAdLoadSucceeded(inMobiNative);
                 Log.e("LockScreenActivity","onAdLoadSucceeded");
                 container.removeAllViews();
                 container.addView(inMobiNative.getPrimaryViewOfWidth(LockScreenActivity.this,container,container,container.getWidth()));
             }
 
             @Override
-            public void onAdLoadFailed(@NonNull InMobiNative inMobiNative, @NonNull InMobiAdRequestStatus inMobiAdRequestStatus) {
+            public void onAdLoadFailed(InMobiNative inMobiNative, InMobiAdRequestStatus inMobiAdRequestStatus) {
+                super.onAdLoadFailed(inMobiNative, inMobiAdRequestStatus);
                 Log.e("LockScreenActivity","onAdLoadFailed");
             }
 
             @Override
             public void onAdFullScreenDismissed(InMobiNative inMobiNative) {
+                super.onAdFullScreenDismissed(inMobiNative);
                 Log.e("LockScreenActivity","onAdFullScreenDismissed");
             }
 
             @Override
             public void onAdFullScreenWillDisplay(InMobiNative inMobiNative) {
+                super.onAdFullScreenWillDisplay(inMobiNative);
                 Log.e("LockScreenActivity","onAdFullScreenWillDisplay");
             }
 
             @Override
             public void onAdFullScreenDisplayed(InMobiNative inMobiNative) {
+                super.onAdFullScreenDisplayed(inMobiNative);
                 Log.e("LockScreenActivity","onAdFullScreenDisplayed");
             }
 
             @Override
             public void onUserWillLeaveApplication(InMobiNative inMobiNative) {
+                super.onUserWillLeaveApplication(inMobiNative);
                 Log.e("LockScreenActivity","onUserWillLeaveApplication");
             }
 
             @Override
-            public void onAdImpressed(@NonNull InMobiNative inMobiNative) {
+            public void onAdImpressed(InMobiNative inMobiNative) {
+                super.onAdImpressed(inMobiNative);
                 Log.e("LockScreenActivity","onAdImpressed");
             }
 
             @Override
-            public void onAdClicked(@NonNull InMobiNative inMobiNative) {
+            public void onAdClicked(InMobiNative inMobiNative) {
+                super.onAdClicked(inMobiNative);
                 Log.e("LockScreenActivity","onAdClicked");
             }
 
             @Override
-            public void onMediaPlaybackComplete(@NonNull InMobiNative inMobiNative) {
-                Log.e("LockScreenActivity","onMediaPlaybackComplete");
-            }
-
-            @Override
-            public void onAdStatusChanged(@NonNull InMobiNative inMobiNative) {
+            public void onAdStatusChanged(InMobiNative inMobiNative) {
+                super.onAdStatusChanged(inMobiNative);
                 Log.e("LockScreenActivity","onAdStatusChanged");
             }
 
             @Override
-            public void onUserSkippedMedia(@NonNull InMobiNative inMobiNative) {
-                Log.e("LockScreenActivity","onUserSkippedMedia");
+            public void onRequestPayloadCreated(byte[] bytes) {
+                super.onRequestPayloadCreated(bytes);
+                Log.e("LockScreenActivity","onRequestPayloadCreated");
+            }
+
+            @Override
+            public void onRequestPayloadCreationFailed(InMobiAdRequestStatus inMobiAdRequestStatus) {
+                super.onRequestPayloadCreationFailed(inMobiAdRequestStatus);
+                Log.e("LockScreenActivity","onRequestPayloadCreationFailed");
             }
         });
-
         nativeAd.showOnLockScreen(new InMobiNative.LockScreenListener() {
             @Override
             public void onActionRequired(InMobiNative inMobiNative) {

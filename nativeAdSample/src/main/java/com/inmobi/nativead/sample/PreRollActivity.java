@@ -18,6 +18,7 @@ import android.widget.Toast;
 
 import com.inmobi.ads.InMobiAdRequestStatus;
 import com.inmobi.ads.InMobiNative;
+import com.inmobi.ads.listeners.NativeAdEventListener;
 import com.inmobi.nativead.sample.newsheadline.NewsSnippet;
 
 import org.json.JSONObject;
@@ -62,13 +63,11 @@ public class PreRollActivity extends AppCompatActivity {
                 toggle();
             }
         });*/
-
-
-        nativeAd=new InMobiNative(PreRollActivity.this,PlacementId.INMOBI_SPLASH_PREROLL, new InMobiNative.NativeAdListener() {
+        nativeAd=new InMobiNative(this, PlacementId.INMOBI_SPLASH_PLACEMENT_STATIC, new NativeAdEventListener() {
             @Override
-            public void onAdLoadSucceeded(@NonNull InMobiNative inMobiNative) {
-
-                JSONObject content = inMobiNative.getCustomAdContent();
+            public void onAdLoadSucceeded(InMobiNative inMobiNative) {
+                super.onAdLoadSucceeded(inMobiNative);
+                  JSONObject content = inMobiNative.getCustomAdContent();
                 Log.e(TAG, "onAdLoadSucceeded===" + content.toString());
                 NewsSnippet item = new NewsSnippet();
                 item.title = inMobiNative.getAdTitle();//content.getString(Constants.AdJsonKeys.AD_TITLE);
@@ -87,62 +86,74 @@ public class PreRollActivity extends AppCompatActivity {
                         nativeAd.reportAdClickAndOpenLandingPage();
                     }
                 });
+
             }
 
             @Override
-            public void onAdLoadFailed(@NonNull InMobiNative inMobiNative, @NonNull InMobiAdRequestStatus inMobiAdRequestStatus) {
-                Log.e(TAG, "Failed to load ad. " + inMobiAdRequestStatus.getMessage());
+            public void onAdLoadFailed(InMobiNative inMobiNative, InMobiAdRequestStatus inMobiAdRequestStatus) {
+                super.onAdLoadFailed(inMobiNative, inMobiAdRequestStatus);
+                Log.e(TAG, "onAdLoadFailed ");
             }
 
             @Override
             public void onAdFullScreenDismissed(InMobiNative inMobiNative) {
+                super.onAdFullScreenDismissed(inMobiNative);
                 Log.e(TAG, "onAdFullScreenDismissed ");
-            }
-
-            @Override
-            public void onAdFullScreenWillDisplay(InMobiNative inMobiNative) {
-
             }
 
             @Override
             public void onAdFullScreenDisplayed(InMobiNative inMobiNative) {
                 Log.e(TAG, "onAdFullScreenDisplayed ");
+
+            }
+
+            @Override
+            public void onAdFullScreenWillDisplay(InMobiNative inMobiNative) {
+                super.onAdFullScreenWillDisplay(inMobiNative);
+                Log.e(TAG, "onAdFullScreenWillDisplay ");
             }
 
             @Override
             public void onUserWillLeaveApplication(InMobiNative inMobiNative) {
+                super.onUserWillLeaveApplication(inMobiNative);
                 Log.e(TAG, "onUserWillLeaveApplication ");
             }
 
             @Override
-            public void onAdImpressed(@NonNull InMobiNative inMobiNative) {
+            public void onAdImpressed(InMobiNative inMobiNative) {
+                super.onAdImpressed(inMobiNative);
                 Log.e(TAG, "onAdImpressed ");
-                Toast.makeText(PreRollActivity.this,"AdImpressed",Toast.LENGTH_SHORT).show();
+                Toast.makeText(PreRollActivity.this,"onAdImpressed",Toast.LENGTH_SHORT).show();
             }
 
             @Override
-            public void onAdClicked(@NonNull InMobiNative inMobiNative) {
+            public void onAdClicked(InMobiNative inMobiNative) {
+                super.onAdClicked(inMobiNative);
                 Log.e(TAG, "onAdClicked ");
                 Toast.makeText(PreRollActivity.this,"AdClicked",Toast.LENGTH_SHORT).show();
-
             }
 
             @Override
-            public void onMediaPlaybackComplete(@NonNull InMobiNative inMobiNative) {
-                Log.e(TAG, "onMediaPlaybackComplete ");
-                Toast.makeText(PreRollActivity.this,"MediaPlaybackComplete",Toast.LENGTH_SHORT).show();
+            public void onAdStatusChanged(InMobiNative inMobiNative) {
+                super.onAdStatusChanged(inMobiNative);
+                Log.e(TAG, "onAdStatusChanged ");
             }
 
             @Override
-            public void onAdStatusChanged(@NonNull InMobiNative inMobiNative) {
-
+            public void onRequestPayloadCreated(byte[] bytes) {
+                super.onRequestPayloadCreated(bytes);
+                Log.e(TAG, "onRequestPayloadCreated ");
             }
 
             @Override
-            public void onUserSkippedMedia(@NonNull InMobiNative inMobiNative) {
-                
+            public void onRequestPayloadCreationFailed(InMobiAdRequestStatus inMobiAdRequestStatus) {
+                super.onRequestPayloadCreationFailed(inMobiAdRequestStatus);
+                Log.e(TAG, "onRequestPayloadCreationFailed ");
             }
+
+
         });
+
 
         Map<String,String> map=new HashMap<>();
         nativeAd.setExtras(map);

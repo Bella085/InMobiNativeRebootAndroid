@@ -15,14 +15,14 @@
         android:layout_gravity="right"
         android:visibility="gone" />
 
-    <com.facebook.drawee.view.SimpleDraweeView
+    <ImageView
         android:id="@+id/photo"
         android:layout_marginTop="5dp"
         android:layout_width="300dp"
         android:layout_height="300dp"
         android:layout_marginBottom="0dp"
-        fresco:actualImageScaleType = "fitCenter"
-        fresco:placeholderImage = "@mipmap/ic_launcher"/>
+        android:scaleType = "fitCenter"
+        android:src = "@mipmap/ic_launcher"/>
 
     <LinearLayout
         android:id="@+id/photoview"

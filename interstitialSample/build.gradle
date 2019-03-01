@@ -35,7 +35,8 @@ android {
 }
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+//    compile fileTree(include: ['*.jar'], dir: 'libs')
     compile "com.android.support:design:${androidSupportLibVersion}"
     compile "com.android.support:appcompat-v7:${androidSupportLibVersion}"
     compile "com.android.support:recyclerview-v7:${androidSupportLibVersion}"
@@ -43,5 +44,5 @@ dependencies {
     compile 'com.google.android:multidex:0.1'
     compile 'com.squareup.picasso:picasso:2.5.2'
     //compile files('libs/InMobi-6.9.1.jar')
-    compile files('libs/InMobi-7.1.0.jar')
+//    compile files('libs/InMobi-7.1.0.jar')
 }

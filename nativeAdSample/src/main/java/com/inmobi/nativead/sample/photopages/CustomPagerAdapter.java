@@ -9,9 +9,9 @@ import android.support.v4.view.PagerAdapter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import com.facebook.drawee.view.SimpleDraweeView;
 
 import java.lang.ref.WeakReference;
 import java.util.List;
@@ -64,7 +64,7 @@ public class CustomPagerAdapter extends PagerAdapter {
 
     private View getCoverFlowItem(ViewGroup container, int position) {
         View pageView = mInflater.inflate(R.layout.page_item_view, container, false);
-        SimpleDraweeView imageView = (SimpleDraweeView) pageView.findViewById(R.id.photo);
+        ImageView imageView = (ImageView) pageView.findViewById(R.id.photo);
         TextView tag = (TextView) pageView.findViewById(R.id.sponsored);
         LinearLayout lineaeview=(LinearLayout) pageView.findViewById(R.id.photoview);
         PageItem item = mItems.get(position);
