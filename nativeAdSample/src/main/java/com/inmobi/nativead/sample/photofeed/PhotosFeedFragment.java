@@ -192,12 +192,6 @@ public class PhotosFeedFragment extends ListFragment implements NativeProvider {
                     Log.e(TAG, "onAdFullScreenDisplayed ");
                 }
             });
-            Map<String,String>map=new HashMap<>();
-            map.put("a-dst", "8");
-            map.put("a-sandbox", "true");
-            map.put("a-creative-id", "10643256");  //static
-            map.put("a-creative-id", "10645187");  //video
-            nativeAd.setExtras(map);
             nativeAd.load();
             mNativeAds[i] = nativeAd;
         }
