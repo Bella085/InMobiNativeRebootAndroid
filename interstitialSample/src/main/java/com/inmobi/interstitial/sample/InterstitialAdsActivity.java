@@ -25,7 +25,7 @@ public class InterstitialAdsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        InMobiSdk.init(this, "1234567890qwerty0987654321qwerty12345");
+        InMobiSdk.init(this, "ce799b31bb25457d9e89937951c66689");
         /** 欧盟国家流量必须使用以下初始化方式
          /*JSONObject consentObject = new JSONObject();
          try {

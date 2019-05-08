@@ -10,6 +10,7 @@ android {
         targetSdkVersion androidTargetSdkVersion
         versionCode appVersionCode
         versionName appVersionName
+
         multiDexEnabled true
     }
     buildTypes {
@@ -50,5 +51,7 @@ dependencies {
     compile 'com.squareup.picasso:picasso:2.5.2'
     compile 'com.android.support:support-v4:24.2.1'
     compile 'com.zhy:okhttputils:2.0.0'
-    compile files('libs/InMobi-7.2.7.jar')
+    //    compile files('libs/InMobi-7.2.7.jar')
+    compile files('libs/InMobi-7.2.8-SNAPSHOT.jar')
+    compile files('libs/InMobi-7.2.8.jar')
 }

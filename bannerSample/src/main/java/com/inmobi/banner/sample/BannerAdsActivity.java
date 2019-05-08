@@ -22,7 +22,6 @@ import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
-import com.facebook.drawee.backends.pipeline.Fresco;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -63,7 +62,6 @@ public class BannerAdsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Fresco.initialize(this);
 
         InMobiSdk.init(this, "35cd4640484c490d8d7b59484fa52952");
         /** 欧盟国家流量必须使用以下初始化方式
